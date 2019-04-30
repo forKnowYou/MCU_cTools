@@ -32,6 +32,7 @@ typedef struct {
 
 void        i2c_soft_init(sI2C_soft_t* psI2C, pfPinOperate_t pfSDA, pfPinOperate_t pfSCL, 
               pfSDARead_t pfSDARead, pfDelay_t pfDelay);
+
 int         i2c_soft_writeBytes(sI2C_soft_t* psI2C, uint8_t addr, uint8_t reg, uint8_t* pDat, uint8_t len);
 int         i2c_soft_readBytes(sI2C_soft_t* psI2C, uint8_t addr, uint8_t reg, uint8_t* pDat, uint8_t len);
 
